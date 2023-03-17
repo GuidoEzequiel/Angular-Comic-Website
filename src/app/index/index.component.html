@@ -1,0 +1,8 @@
+<div class="index">
+    <h1>Comic Index</h1>
+    <ul>
+        <li *ngFor="let image of images; index as i">
+            <a (click)="goToComic(i)">{{ 'Comic ' + (i + 1) }}</a>
+        </li>
+    </ul>
+</div>

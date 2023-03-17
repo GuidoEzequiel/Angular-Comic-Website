@@ -1,0 +1,63 @@
+.navigation {
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 2px;
+}
+
+.comic-image {
+    display: flex;
+    justify-content: center;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.navigation-container {
+    width: 1000px;
+    margin: 10px auto;
+    padding: 20px;
+    border: 1px solid purple;
+}
+
+.app-header {
+    background-color: #343a40;
+    padding: 1rem 0;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-brand {
+    color: #fff;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+.navbar-menu {
+    display: flex;
+}
+
+.nav-item {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 1.5rem;
+    font-size: 1.1rem;
+}
+
+.nav-item:hover {
+    text-decoration: underline;
+}

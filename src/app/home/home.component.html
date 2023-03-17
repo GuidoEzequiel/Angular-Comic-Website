@@ -1,0 +1,26 @@
+<header class="app-header">
+    <div class="container">
+        <nav class="navbar">
+            <a class="navbar-brand" href="/">LectorManga</a>
+            <div class="navbar-menu">
+                <a class="nav-item" href="/mangas">Mangas</a>
+                <a class="nav-item" href="/updates">Updates</a>
+                <a class="nav-item" href="/genres">Genres</a>
+            </div>
+        </nav>
+    </div>
+</header>
+
+<div class="navigation-container">
+    <div class="navigation">
+        <button mat-raised-button color="warn" (click)="goToFirst()">First</button>
+        <button mat-raised-button [disabled]="!hasPrevious()" (click)="goToPrevious()">Previous</button>
+        <button mat-stroked-button color="warn" (click)="goToIndex()">Index</button>
+        <button mat-raised-button [disabled]="!hasNext()" (click)="goToNext()">Next</button>
+        <button mat-raised-button color="warn" (click)="goToPresent()">Present</button>
+
+    </div>
+    <div class="comic-image">
+        <img [src]="currentImage" alt="Current Comic" />
+    </div>
+</div>
